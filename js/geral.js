@@ -1,4 +1,4 @@
-const urlbase = "http://localhost:3030";
+const urlbase = "http://https://abp-goldenhives.onrender.com:3030";
 //const urlbase = "https://abp-1dsm-server.onrender.com";
 // Variável usada para manter os dados do usuário logado
 // A função carregarLogin verifica se o usuário está logado e carrega na variável usuarioLogado
