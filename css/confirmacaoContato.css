@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
+
+/*------------------------------------------Header-------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "roboto", sans-serif;
+  background-color: #ffc758;
+
+}
+
+header {
+  padding: 20px 0px 20px 0px;
+  background-color: rgba(38, 50, 56, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  position: relative;
+  margin-left: 150px;
+  width: 30%;
+  border-radius: 25px;
+}
+/*------------------------------------------menu-------------------------------------*/
+ul {
+  list-style: none;
+  background-color: rgba(38, 50, 56, 1);
+  margin-right: 60px;
+}
+ul li {
+  display: inline-block;
+  position: relative;
+}
+ul li a {
+  display: block;
+  padding: 10px 50px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+ul li button {
+  border: none;
+  background-color: rgba(38, 50, 56, 1);
+  display: block;
+  padding: 10px 50px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+ul li ul.dropdown {
+  width: 100%;
+  background: rgba(38, 50, 56, 1);
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+ul li a:hover, button:hover {
+  cursor: pointer;
+  background: #ffa800;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+/*------------------------------------conteudo da pagina----------------------------*/
+h1{
+  font-size: 65px;
+  text-align: center;
+  margin-top: 30px;
+}
+h3{
+  text-align: center;
+  margin-top: 30px;
+}
+.button{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.button a{
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+  background-color: rgba(38, 50, 56, 1) ;
+  color: #ffa800;
+}
+/*------------------------------------------rodapé---------------------------------*/
+
+footer {
+    color: #ffa800;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(38, 50, 56, 1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  footer div a {
+    text-decoration: none;
+    color: #ffa800;
+  }
+  .github-footer {
+    display: flex;
+  
+    align-items: center;
+  }
+
+  @media (max-width: 995px) {
+    header{
+      flex-direction: column;
+    }
+    header img{
+      margin-left: auto;
+    }
+    ul{
+      margin: auto auto auto auto;
+    }
+  }

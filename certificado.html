@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="./js/geral.js"></script>
+<script src="./js/questionario.js"></script>
+<script src="certificado_nome.js"></script>
+<title>Certificado de Conclusão</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+
+    body {
+        background-image: url('https://i.postimg.cc/19WFqDSb/Gold-Black-Luxury-Completion-Certificate.jpg');
+        background-size: 75%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #nome {
+        font-family: 'Italianno', cursive;
+        font-size: 7vw;
+        color: gold;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+
+    @media (max-width: 600px) {
+        #nome {
+            font-size: 5vw;
+        }
+    }
+</style>
+</head>
+<body onload="carregarLogin();listarQuestao();exibirMail();">
+    <div id="nome"></div>
+</body>
+</html>

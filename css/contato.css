@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
+
+/*------------------------------------------Header-------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "roboto", sans-serif;
+  background-color: #ffc758;
+}
+
+header {
+  padding: 20px 0px 20px 0px;
+  background-color: rgba(38, 50, 56, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  position: relative;
+  margin-left: 150px;
+  width: 30%;
+  border-radius: 25px;
+}
+/*------------------------------------------menu-------------------------------------*/
+ul {
+  list-style: none;
+  background-color: rgba(38, 50, 56, 1);
+  margin-right: 60px;
+}
+ul li {
+  display: inline-block;
+  position: relative;
+}
+ul li a {
+  display: block;
+  padding: 10px 50px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+ul li button {
+  border: none;
+  background-color: rgba(38, 50, 56, 1);
+  display: block;
+  padding: 10px 50px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+ul li ul.dropdown {
+  width: 100%;
+  background: rgba(38, 50, 56, 1);
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+ul li a:hover, button:hover {
+  cursor: pointer;
+  background: #ffa800;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+/*------------------------------------conteudo da pagina----------------------------*/
+
+h3{
+  font-size: 4em;
+  font-weight: 200;
+  padding: 30px;
+  text-align: start;
+}
+.conteudo img{
+  width: 100%;
+  max-width: 600px;
+}
+@media (max-width: 1000px){
+  .conteudo{
+   flex-wrap: wrap-reverse;
+    }
+    .conteudo img{
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .container-contato {
+      margin-right: auto;
+      margin-left: auto;
+      padding: 10px 20px 10px 20px;
+    }
+    .button-contato {
+      padding: 5px 10px 5px 10px;
+    }
+
+    h3{
+      font-size: 2em;
+    }
+}
+
+
+
+
+.conteudo{
+display: flex ;
+justify-content: space-around;
+align-items: flex-end;
+}
+
+label{
+  color: #ffa800;
+}
+.container-contato {
+  margin-top: 50px;
+  margin-right: 90px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 30px 80px 30px 80px;
+  background-color: #263238;
+  box-shadow: 5px 5px 5px rgb(82, 82, 82);
+}
+
+.button-contato {
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  color: #263238;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 15px;
+  background-color: #ffa800;
+}
+
+
+
+/*------------------------------------------rodapé---------------------------------*/
+
+footer {
+    color: #ffa800;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(38, 50, 56, 1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer div a {
+    text-decoration: none;
+    color: #ffa800;
+  }
+  .github-footer {
+    display: flex;
+  
+    align-items: center;
+  }
+  @media (max-width: 995px) {
+    header{
+      flex-direction: column;
+    }
+    header img{
+      margin-left: auto;
+    }
+    ul{
+      margin: auto auto auto auto;
+    }
+  }
