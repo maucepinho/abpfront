@@ -1,25 +1,25 @@
-const urlbase = "https://abp-goldenhives.onrender.com";
+const urlbase = 'https://abpfront-mol8.onrender.com:3030'
 //const urlbase = "https://abp-1dsm-server.onrender.com";
 // Variável usada para manter os dados do usuário logado
 // A função carregarLogin verifica se o usuário está logado e carrega na variável usuarioLogado
-let usuarioLogado = undefined;
+let usuarioLogado = undefined
 
 // Recuperar os dados de login que estão no localStorage do navegador
 function carregarLogin() {
   // os dados estão na propriedade usuario do localStorage
-  let objeto = localStorage.getItem("usuario");
+  let objeto = localStorage.getItem('usuario')
   // JSON.parse() converte uma string JSON em um objeto JS
-  usuarioLogado = JSON.parse(objeto);
+  usuarioLogado = JSON.parse(objeto)
 }
 
 function logout() {
   // Remover a propriedade `usuario` do localStorage
-  localStorage.removeItem("usuario");
+  localStorage.removeItem('usuario')
   // Redireciona para a página de login
-  window.location.href = "./login.html";
+  window.location.href = './login.html'
 }
 
 function login() {
   // Redireciona para a página de login
-  window.location.href = "./login.html";
+  window.location.href = './login.html'
 }
